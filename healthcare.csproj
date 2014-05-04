@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63C8D052-01F0-4A92-B67B-183B25101F91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>healthcare</RootNamespace>
+    <AssemblyName>healthcare</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BioEnable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\BioEnable\BioEnableSDK\dll\BioBSP_DLL\BioEnable.dll</HintPath>
+    </Reference>
+    <Reference Include="NITGEN.SDK.NBioBSP, Version=1.1.2.2, Culture=neutral, PublicKeyToken=96eee45103d523d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\BioEnable\BioEnableSDK\bin\BioBSP\C#\NITGEN.SDK.NBioBSP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Doctor Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Doctor Details.Designer.cs">
+      <DependentUpon>Add Doctor Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Patient Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Patient Details.Designer.cs">
+      <DependentUpon>Add Patient Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Edit Patient Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Edit Patient Details.Designer.cs">
+      <DependentUpon>Add_Edit Patient Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Employee_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Employee_Details.Designer.cs">
+      <DependentUpon>Add_Employee_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="biometriclogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="biometriclogin.Designer.cs">
+      <DependentUpon>biometriclogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MD5Class.cs" />
+    <Compile Include="Clinical_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clinical_Settings.Designer.cs">
+      <DependentUpon>Clinical_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connectDB.cs" />
+    <Compile Include="DoctorMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorMainForm.Designer.cs">
+      <DependentUpon>DoctorMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeMainForm.Designer.cs">
+      <DependentUpon>EmployeeMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptionException.cs" />
+    <Compile Include="Fix Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fix Appointment.Designer.cs">
+      <DependentUpon>Fix Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID_Settings.Designer.cs">
+      <DependentUpon>ID_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMD5.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.cs">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAppointments.Designer.cs">
+      <DependentUpon>ViewAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDoctorInformsation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDoctorInformsation.Designer.cs">
+      <DependentUpon>ViewDoctorInformsation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPatients.Designer.cs">
+      <DependentUpon>ViewPatients.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Doctor Details.resx">
+      <DependentUpon>Add Doctor Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Patient Details.resx">
+      <DependentUpon>Add Patient Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Edit Patient Details.resx">
+      <DependentUpon>Add_Edit Patient Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Employee_Details.resx">
+      <DependentUpon>Add_Employee_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="biometriclogin.resx">
+      <DependentUpon>biometriclogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clinical_Settings.resx">
+      <DependentUpon>Clinical_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorMainForm.resx">
+      <DependentUpon>DoctorMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMainForm.resx">
+      <DependentUpon>EmployeeMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fix Appointment.resx">
+      <DependentUpon>Fix Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID_Settings.resx">
+      <DependentUpon>ID_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.en-IN.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAppointments.resx">
+      <DependentUpon>ViewAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDoctorInformsation.resx">
+      <DependentUpon>ViewDoctorInformsation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPatients.resx">
+      <DependentUpon>ViewPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-medical-hospital-background-in-blue-25902910.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHS_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4859533-heart-beat-on-hospital-monitor-on-a-white-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4385537-heartbeat-on-hospital-monitor-on-a-white-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_3518599-Young-doctor-portrait.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1136737-590305-hospital-gown-with-stethoscope-on-white-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1136737-590305-hospital-gown-with-stethoscope-on-white-background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CHS_background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NBioBSPCOMLib">
+      <Guid>{A4B390F0-7679-46BD-80ED-82366FCF023D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
